@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpler</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--
+    // Шапка сайта
+    -->
+    <header class = "header">
+        <a class ="header-logo" href="/">
+            <img 
+                class="header-logo-image"
+                src="./images/logo.png"
+                alt="Simpler Logo"
+                width="84" height="95" loading="lazy"
+            />
+        </a>
+        <nav class="header-menu">
+            <ul class="header-menu-list">
+                <li class="header-menu-item">
+                    <a href="#about" class="header-menu-link">О нас</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#course-selection" class="header-menu-link">Подобрать курс</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#teachers" class="header-menu-link">Преподаватели</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#sign-up" class="header-menu-link">Запись</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="#about" class="menu-item">О нас</a><li>
+                <li><a href="#course-selection" class="menu-item">Подобрать курс</a><li>
+                <li><a href="#teachers" class="menu-item">Преподаватели</a><li>
+                <li><a href="#sign-up" class="menu-item">Запись</a><li>
+            </ul>
+        </div>
+
+    </header>
+    <main class="main">
+    
+        <h1 class="visually-hidden" >Simpler School</h1>
+        <section class="top">
+            <h2 class="visually-hidden">Start Page</h2>
+            <h1 class="visually-hidden" >Simpler School</h1>
+            <div class="circle-image"></div>
+            <div class="family-image"></div>
+            <div class="container">
+                <div class="content">
+                    <h2 class="top_title">
+                        Подготовка к ОГЭ/ЕГЭ <br> с любого уровня на 
+                        <span class="highlight">нужный балл</span>
+                    </h2>
+                    <p class="top_text">
+                        Всего от 3 999₽ за 2 предмета <br> в месяц без доплат за 2-ой <br> предмет
+                    </p>
+                    <a href="#sign-up" class="top-btn">
+                        начать подготовку
+                        <img src="./icons/arrow_1.svg" alt="Arrow Icon" class="top-btn-icon" />
+                      </a>
+                </div>
+            </div>
+        </section> 
+        <!-- "Готовься без стресса" -->
+        <section id="about" class="stress-free">
+            <div class="background-gradient"></div>
+            <div class="stress-free-row">
+                <h1 class="stress-free-title">
+                    <span class="line">Готовься</span> <br />
+                    <span class="line">без стресса</span>
+                </h1>
+                <div class="stats">
+                    <div class="stat-block blue">
+                        <p class="stat-text1">Simpler доверили подготовку</p>
+                        <p class="stat-value1">2500+</p>
+                        <p class="stat-subtext1">учеников</p>
+                    </div>
+                    <div class="stat-block pink">
+                        <p class="stat-text2">О нас написали</p>
+                        <p class="stat-value2">300+</p>
+                        <p class="stat-subtext2">отзывов</p>
+                    </div>
+                </div>
+            </div>
+                <div class="testimonial">
+                    <div class="testimonial-block">
+                        <h3>[Отзыв о курсе ЕГЭ]</h3>
+                        <p>Разбор заданий очень доходчив и понятен. Каждое задание разбирается по кусочкам. Очень трудно найти такого преподавателя, который на одной волне с учениками и понятно объясняет.</p>
+                        <div class="testimonial-author">
+                            <img src="./images/user.png" alt="Отзыв" class="testimonial-photo">
+                            <p>Марина, поступила в РАНХиГС</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-reason">
+                        <h3 class="desktop">Мы за качественное<br>обучение! Почему<br>стоит выбрать нас?</h3>
+                        <h3 class="mobile">Мы за качественное обучение!</h3>
+                        <ul>
+                            <li>только авторские материалы</li>
+                            <li>поддержка кураторов 24/7</li>
+                            <li>еженедельные пробники</li>
+                            <li>проверка домашки кураторами</li>
+                        </ul>
+                    </div>
+                </div>
+            
+        </section>
+
+        <!-- Выбор курса -->
+        <section id="course-selection" class="course-selection">
+            <h2 class="course-title">Выбери курс под свои цели</h2>
+            <div class="course-grid">
+                <div class="course-category">
+                    <h3 class="category-title">Курсы ЕГЭ</h3>
+                    <div class="course-card">
+                        <span class="course-subject">Русский язык</span>
+                        <p class="course-name">Годовой курс</p>
+                        <p class="course-description">
+                            Собрали всю теорию и практику для успешной сдачи на 90+: еженедельная практика
+                        </p>
+                        <p class="course-price">от <span class="price">3699₽</span>/мес*</p>
+                    </div>
+                    <div class="course-card">
+                        <span class="course-subject">Математика</span>
+                        <p class="course-name">Годовой курс</p>
+                        <p class="course-description">
+                            Никакой нудной теории, только интерактивные вебы и полезная домашка
+                        </p>
+                        <p class="course-price">от <span class="price">3999₽</span>/мес*</p>
+                    </div>
+                </div>
+                <div class="course-category">
+                    <h3 class="category-title">Курсы ОГЭ</h3>
+                    <div class="course-card">
+                        <span class="course-subject">Русский язык</span>
+                        <p class="course-name">Годовой курс</p>
+                        <p class="course-description">
+                            Проверка сочинений от экспертов, а также полезные вебы и пробники каждую неделю
+                        </p>
+                        <p class="course-price">от <span class="price">1999₽</span>/мес*</p>
+                    </div>
+                    <div class="course-card">
+                        <span class="course-subject">Математика</span>
+                        <p class="course-name">Годовой курс</p>
+                        <p class="course-description">
+                            С нашим курсом ты будешь щелкать варианты как орешки, подготовим на 5
+                        </p>
+                        <p class="course-price">от <span class="price">2299₽</span>/мес*</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Преподаватели -->
+        <section id="teachers"class="teachers">
+            <!-- Задний фон -->
+            <div class="teachers-background"></div>
+        
+            <!-- Заголовок секции -->
+            <h2 class="teachers-title">Преподаватели</h2>
+        
+            <!-- Сетка преподавателей -->
+            <div class="teachers-grid">
+                <!-- Карточка преподавателя 1 -->
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="./images/teacher_1.png" alt="Наталья Купчина" />
+                    </div>
+                    <div class="teacher-info">
+                        
+                        <div class="teacher-header">
+                            <p class="teacher-name">Наталья Купчина</p>
+                            <div class="teacher-courses">
+                                <span class="course black">ЕГЭ</span>
+                                <span class="course yellow">русский</span>
+                            </div>
+                        </div>
+                        <!-- Описание преподавателя -->
+                        <p class="teacher-description">Небольшой текст о преподавателе. Преподаватель с опытом и увлечением за предмет.</p>
+                    </div>
+                </div>
+        
+                <!-- Карточка преподавателя 2 -->
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="./images/teacher_2.png" alt="Иван Иванов" />
+                    </div>
+                    <div class="teacher-info">
+                        
+                        <div class="teacher-header">
+                            <p class="teacher-name">Ольга Елисеева</p>
+                            <div class="teacher-courses">
+                                <span class="course black">ЕГЭ</span>
+                                <span class="course yellow">русский</span>
+                            </div>
+                        </div>
+                        <!-- Описание преподавателя -->
+                        <p class="teacher-description">Небольшой текст о преподавателе. Преподаватель с опытом и увлечением за предмет.</p>
+                    </div>
+                </div>
+        
+                <!-- Карточка преподавателя 3 -->
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="./images/teacher_3.png" alt="Егор Жмыхов" />
+                    </div>
+                    <div class="teacher-info">
+                       
+                        <div class="teacher-header">
+                            <p class="teacher-name">Егор Жмыхов</p>
+                            <div class="teacher-courses">
+                                <span class="course black">ЕГЭ</span>
+                                <span class="course yellow">мат-ка</span>
+                            </div>
+                        </div>
+                        <!-- Описание преподавателя -->
+                        <p class="teacher-description">Небольшой текст о преподавателе. Преподаватель с опытом и увлечением за предмет.</p>
+                    </div>
+                </div>
+        
+                <!-- Карточка преподавателя 4 -->
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="./images/teacher_4.png" alt="Виталий Купчин" />
+                    </div>
+                    <div class="teacher-info">
+                     
+                        <div class="teacher-header">
+                            <p class="teacher-name">Виталий Купчин</p>
+                            <div class="teacher-courses">
+                                <span class="course black">ЕГЭ</span>
+                                <span class="course yellow">мат-ка</span>
+                            </div>
+                        </div>
+                        <!-- Описание преподавателя -->
+                        <p class="teacher-description">Небольшой текст о преподавателе. Преподаватель с опытом и увлечением за предмет.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section class="intro-text">
+            <h2 class="intro-title">Готов стать частью<br>нашей семьи? Присоединяйся</h2>
+        </section>
+        
+        <section id="sign-up" class="sign-up">
+            <div class="sign-up-form-container">
+                <div class="sign-up-text">
+                    <p>Помогаем экономить на подготовке<br>Делаем учебу доступной для каждого</p>
+                    <p class="highlight-text">Запишись на бесплатный урок</p>
+                    <p>Даем гарантию качественной подготовки и поступления на бюджет в ведущие вузы страны</p>
+                </div>
+                <div class="sign-up-form">
+                    <input type="text" placeholder="Имя" class="input-field">
+                    <input type="text" placeholder="Номер телефона" class="input-field">
+                    <button class="sign-up-button">Записаться</button>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <p>© Simpler, 2024</p>
+                <p>191167, г. Санкт-Петербург, внутригородской муниципальный округ Смольнинское, ул. Александра Невского, д. 9 литера А, помещение 16-Н</p>
+                <p>Свяжитесь с нами: 8 800 302-09-12 | simpler-help@mail.ru</p>
+                <p>ОРГН: 1211600026992</p>
+            </div>
+        </footer>
+         
+    </main>
+</body>
+</html>
+       
